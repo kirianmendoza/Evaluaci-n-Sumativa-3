@@ -1,0 +1,26 @@
+#include <studio.h>
+#include <math.h>
+
+int main(){
+   float a, b, c;
+
+printf("\n Ecuaciones de segundo grado\n\");
+printf("  2\n");
+printf("ax + bx + c = \n\n");
+printf("introduce valor de a: ");
+scanf("%f", &a);
+printf("introduce valor de b: ");
+scanf("%f", &b);
+printf("introduce valor de c: ");
+scanf("%f", &c);
+
+if (D==0)
+  printf("Sol. : %.2f\n", -b/(2*a));
+else if (D>0) {
+    printf("Sol. 1: %.2f\n", (-b+sqrt(D))/ (2*a));
+    printf("Sol. 2: %.2f\n", (-b-sqrt(D))/ (2*a));
+}
+else { /* D<0 */
+    printf("Sol. 1: %.2f+%.2f i\n", -b/(2*a),(sqrt(-D))/(2*a));
+    printf("Sol. 2: %.2f-%.2f i\n", -b/(2*a),(sqrt(-D))/(2*a));
+}
